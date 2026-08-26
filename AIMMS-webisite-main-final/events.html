@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Events page for the Armenian-International Mining and Metallurgy Society." />
+  <title>Events | AIMMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800;900&family=Noto+Sans+Armenian:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/aimms-icon.svg" />
+</head>
+<body data-page="events">
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="AIMMS home">
+        <img class="brand-logo" src="assets/aimms-logo.svg" alt="Armenian-International Mining and Metallurgy Society logo" />
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-menu">
+        <a href="index.html" class="" data-page="home">Home</a><a href="mission.html" class="" data-page="mission">Mission</a><a href="steering-committee.html" class="" data-page="committee">Committee</a><a href="events.html" class=" active" data-page="events">Events</a><a href="contact.html" class=" nav-cta" data-page="contact">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Events</p>
+        <p class="eyebrow">Events</p>
+        <h1>Workshops, forums, and technical conversations.</h1>
+        <p class="lead">A clean event page with filtering, strong readability, and cards that can be updated easily inside the HTML file.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="event-controls reveal" aria-label="Event filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="featured">Featured</button>
+          <button class="filter-btn" data-filter="past">Past</button>
+        </div>
+        <div class="timeline-grid">
+          <article class="event-card reveal" data-type="featured past">
+            <div class="event-date"><span>Sep</span><strong>29</strong><small>2025</small></div>
+            <div class="event-details">
+              <p class="event-status">Featured workshop</p>
+              <h3>Global Progress in Optimizing Mining Processes: Prospects for Armenia</h3>
+              <p>Hosted with AUA Center for Responsible Mining and ICMA, this workshop focused on reducing mining’s environmental and resource footprint through stronger process optimization.</p>
+              <ul><li>9:30 AM – 5:30 PM</li><li>AUA, Yerevan</li><li>Armenian and English translation</li></ul>
+            </div>
+          </article>
+          <article class="event-card reveal" data-type="past">
+            <div class="event-date"><span>Jul</span><strong>08</strong><small>2022</small></div>
+            <div class="event-details">
+              <p class="event-status">Technical event</p>
+              <h3>Reserve Estimation of Copper and Lead-Zinc Resources in Armenia</h3>
+              <p>Technical presentations covering reserve estimation, Armenia’s mineral resources, and insights from the PDAC Mining Convention.</p>
+            </div>
+          </article>
+          <article class="event-card reveal" data-type="past">
+            <div class="event-date"><span>Feb</span><strong>28</strong><small>2022</small></div>
+            <div class="event-details">
+              <p class="event-status">Symposium</p>
+              <h3>Diran Apelian Commemorative Symposium</h3>
+              <p>A commemorative symposium connected with REWAS 2022 and the broader metallurgy community.</p>
+            </div>
+          </article>
+          <article class="event-card reveal" data-type="past">
+            <div class="event-date"><span>Oct</span><strong>15</strong><small>2021</small></div>
+            <div class="event-details">
+              <p class="event-status">Technical talk</p>
+              <h3>Advances in Chalcopyrite Processing, Extraction and Leaching</h3>
+              <p>A focused talk on chalcopyrite processing and extraction methods.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html" aria-label="AIMMS home">
+          <img class="footer-logo" src="assets/aimms-logo.svg" alt="Armenian-International Mining and Metallurgy Society logo" />
+        </a>
+        <p>Building a better future by supporting Armenia’s mining and minerals sector through knowledge, dialogue, and responsible practice.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <div class="footer-links">
+          <a href="mailto:AIMMS301@gmail.com">AIMMS301@gmail.com</a>
+          <a href="contact.html">Schedule a meeting</a>
+        </div>
+      </div>
+      <div>
+        <h3>Address</h3>
+        <p>CP 99 Succ, St-Jacques, Montreal, Quebec H3C 1C5, Canada</p>
+      </div>
+      <div>
+        <h3>Phone</h3>
+        <div class="footer-links">
+          <a href="tel:+15145691596">+1 (514) 569-1596 CA</a>
+          <a href="tel:+37495280377">+374 95 280377 Arm</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> AIMMS. All rights reserved.</span>
+      <span>Static website prepared for GitHub Pages hosting.</span>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
