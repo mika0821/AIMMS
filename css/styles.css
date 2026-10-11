@@ -762,3 +762,29 @@ p { margin-bottom: 0.85rem; }
     grid-column: auto;
   }
 }
+
+
+/* Committee size adjustment for Maggi card */
+.committee-grid .member-card-highlight {
+  grid-column: auto;
+}
+
+.committee-grid .member-card-highlight .member-photo {
+  aspect-ratio: 4 / 3;
+  max-height: 260px;
+}
+
+.committee-grid .member-card-highlight h3 {
+  font-size: 1rem;
+}
+
+.committee-grid .member-card-highlight .committee-featured-label {
+  display: inline-flex;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 981px) {
+  .committee-grid .member-card-highlight {
+    padding: 18px;
+  }
+}
