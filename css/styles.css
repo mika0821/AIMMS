@@ -621,3 +621,144 @@ p { margin-bottom: 0.85rem; }
   .card, .highlight-card, .member-card, .event-card, .contact-card, .message-form { padding: 16px; }
   .stats-row { gap: 8px; }
 }
+
+/* Expanded Steering Committee: readable full biographies and featured vice president */
+.committee-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+.committee-grid .member-card {
+  padding: clamp(22px, 2.8vw, 32px);
+  min-width: 0;
+}
+.committee-grid .member-card h3 {
+  font-size: clamp(1.15rem, 1.65vw, 1.4rem);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+.committee-grid .member-card p:last-child {
+  font-size: .94rem;
+  line-height: 1.78;
+  margin-bottom: 0;
+}
+.committee-grid .member-role {
+  margin-bottom: 15px;
+  font-size: .81rem;
+}
+.committee-grid .member-card-featured {
+  grid-column: 1 / -1;
+  border: 1px solid rgba(30,167,109,.35);
+  background: linear-gradient(130deg, #f0fbf4, #fff);
+  box-shadow: var(--shadow);
+}
+.committee-grid .member-card-featured .member-avatar {
+  width: 60px;
+  height: 60px;
+  font-size: 1.1rem;
+}
+.committee-grid .member-card-featured p:last-child {
+  max-width: 900px;
+}
+.committee-featured-label {
+  display: inline-block;
+  margin: 0 0 10px;
+  color: var(--green-dark);
+  letter-spacing: .09em;
+  font-size: .7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@media (max-width: 760px) {
+  .committee-grid { grid-template-columns: 1fr; gap: 16px; }
+  .committee-grid .member-card { padding: 19px; }
+  .committee-grid .member-card-featured { grid-column: auto; }
+  .committee-grid .member-card p:last-child { font-size: .93rem; }
+}
+
+
+/* Committee photo-ready cards */
+.member-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+}
+
+.member-photo-image {
+  background: #f3f6f4;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.member-photo-placeholder {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 10px;
+  background:
+    linear-gradient(135deg, rgba(223, 247, 232, 0.96), rgba(230, 241, 255, 0.92)),
+    var(--surface);
+  color: var(--green-dark);
+  text-align: center;
+  padding: 18px;
+}
+
+.member-photo-initials {
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--green), #8edcaa);
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: 0.06em;
+  box-shadow: 0 14px 24px rgba(30, 167, 109, 0.22);
+}
+
+.member-photo-note {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.committee-grid .member-card,
+.committee-preview-grid .member-card {
+  padding: 18px;
+}
+
+.committee-grid .member-card-featured {
+  grid-column: span 2;
+}
+
+.committee-grid .member-card-featured .member-photo {
+  aspect-ratio: 16 / 10;
+  margin-bottom: 16px;
+}
+
+.committee-grid .member-card-featured h3 {
+  font-size: 1.35rem;
+}
+
+.committee-grid .member-card p + p {
+  margin-top: 10px;
+}
+
+@media (max-width: 980px) {
+  .committee-grid .member-card-featured {
+    grid-column: auto;
+  }
+}

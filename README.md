@@ -6,17 +6,21 @@ A responsive five-page static website for the Armenian-International Mining and 
 
 - `index.html` — Home (including committee preview)
 - `mission.html` — Mission
-- `steering-committee.html` — Committee: Sevan Bedrosian, Terence S Ortslan, and Maggi Esho Nshanian, with her biography
+- `steering-committee.html` — All 8 Steering Committee members with complete biographies, led by Maggi Esho Nshanian
 - `events.html` — Events with client-side filtering
 - `contact.html` — Contact information and an email preparation form
 - `assets/` — Original AIMMS logo and favicon in SVG/PNG
 - `css/styles.css` — Responsive site styles
 - `js/script.js` — Navigation, section animation, event filter, email form, and copyright year
 
+## Steering Committee
+
+The committee page includes full biographies, in this order: Maggi Esho Nshanian (Vice President, Armenia Representative), Vicken Aprahamian, Lori Manoukian, Sevan Bedrossian (President), Terrence (Srab) Ortslan (Chairman), Armen Hovannissyan, Alen Amirkhanian, and Anna Saghabalyan. The Home page preview also places Maggi first.
+
 ## Publish on GitHub Pages
 
 1. Create a new GitHub repository (or open your existing repository).
-2. Upload **the contents of this folder** to the repository root, including the `assets`, `css`, and `js` folders. `index.html` must be at the top level.
+2. **Extract the ZIP**, select all the extracted files and folders inside it, and upload those contents to the **repository root**, including `assets`, `css`, and `js`. Do **not** upload a single parent folder: `index.html` must be directly visible beside the folders at the top level. If a parent folder was uploaded previously, you may delete it once the root-level site is working.
 3. Commit the changes to your `main` branch.
 4. Open **Settings → Pages** in GitHub, select **Deploy from a branch**, then choose **main** and **/(root)**.
 5. Save the settings and open the GitHub Pages URL when deployment completes.
