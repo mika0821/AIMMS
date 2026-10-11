@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">AIMMS icon</title>
+  <g transform="translate(38 92)">
+    <path d="M0 164L54 88L110 164H0Z" fill="#FFDC4A"/>
+    <path d="M63 164L140 52L226 164H63Z" fill="#EAB308"/>
+    <path d="M112 164L265 24L398 164H112Z" fill="#F9CB39"/>
+    <path d="M342 164L415 91C426 80 443 80 454 91L512 164H342Z" transform="translate(-76 0)" fill="#FFE479"/>
+    <circle cx="378" cy="44" r="36" fill="#FFDC4A"/>
+    <path d="M0 164H118L182 216C196 227 216 228 231 219L310 164H398L357 202C342 216 319 218 301 209L225 175L134 235C110 251 78 248 57 229L0 164Z" fill="#735516"/>
+    <path d="M54 164H225L137 235C114 253 81 250 57 229L54 164Z" fill="#BD8C24" fill-opacity="0.84"/>
+    <path d="M176 164H357L265 229C227 256 176 240 158 198L176 164Z" fill="#FFF0AD" fill-opacity="0.86"/>
+    <path d="M310 164H436L374 206C354 220 327 222 305 210L263 187L310 164Z" fill="#9B7020" fill-opacity="0.72"/>
+  </g>
+</svg>
