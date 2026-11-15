@@ -941,3 +941,12 @@ h1, h2, h3 { color: var(--heading); }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+
+/* Final polish: portraits have matching 4:3 framing in both grids. */
+.member-photo img[src$="terrence-ortslan.jpg"] {
+  object-position: center 42%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; }
+}
