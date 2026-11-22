@@ -623,7 +623,7 @@ p { margin-bottom: 0.85rem; }
 }
 
 /* Steering Committee: exactly four equal-width cards per row on desktop.
-   Eight members create two rows; narrower screens adapt to two/one columns. */
+   Four members appear in one row; narrower screens adapt to two/one columns. */
 .committee-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
@@ -704,7 +704,7 @@ p { margin-bottom: 0.85rem; }
   text-transform: uppercase;
 }
 
-/* Keep Maggi first and recognized, but no extra width or larger photograph. */
+/* Keep Maggi recognized, without an extra-width card or larger photograph. */
 .committee-grid .member-card-highlight {
   grid-column: auto;
   border-color: rgba(30, 167, 109, .38);
@@ -720,7 +720,7 @@ p { margin-bottom: 0.85rem; }
   text-transform: uppercase;
 }
 
-/* The three-card Home page preview uses the same photo treatment. */
+/* The four-card Home page preview uses the same photo treatment. */
 .committee-preview-grid .member-card { padding: 18px; }
 
 @media (max-width: 1099px) {
@@ -736,7 +736,7 @@ p { margin-bottom: 0.85rem; }
 /* ===========================================================
    AIMMS — Black & Gold Design
    Deep charcoal surfaces, golden yellow accents, readable
-   typography. Keeps the layout and 4 x 2 committee grid.
+   typography. Keeps the responsive committee grid.
    =========================================================== */
 :root {
   color-scheme: dark;
@@ -950,3 +950,23 @@ h1, h2, h3 { color: var(--heading); }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; }
 }
+
+/* The four-person committee, in order: Terrence, Sevan, Maggi, Anna. */
+@media (min-width: 1100px) {
+  .committee-grid, .committee-preview-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (min-width: 651px) and (max-width: 1099px) {
+  .committee-grid, .committee-preview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .committee-grid, .committee-preview-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+/* Portrait cropping consistent with the original 4:3 cards. */
+.member-photo img[src$="sevan-bedrossian.jpg"] { object-position: center 13%; }
+.member-photo img[src$="anna-saghabalyan.jpg"] { object-position: center 38%; }
