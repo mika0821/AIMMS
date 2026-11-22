@@ -12,12 +12,12 @@ This repository contains a complete five-page static website for the Armenian-In
 
 ## Steering Committee (display order)
 
-1. Terrence (Srab) Ortslan — Chairman; photo `assets/terrence-ortslan.jpg`
-2. Sevan Bedrossian — President; photo `assets/sevan-bedrossian.jpg`
+1. Sevan Bedrossian — President; photo `assets/sevan-bedrossian.jpg`
+2. Terrence (Srab) Ortslan — Chairman; photo `assets/terrence-ortslan.jpg`
 3. Maggi Esho Nshanian — Vice President, Armenia Representative; photo `assets/maggi-esho-nshanian.jpg`
-4. Anna Saghabalyan — Steering Committee Member; photo `assets/anna-saghabalyan.jpg`
+4. Shushanik Kerobyan — Steering Committee Member; photo `assets/shushanik-kerobyan.jpg` (biography not yet provided)
 
-All four profiles appear in one row on wide desktop screens (four columns), two columns on smaller screens, and one column on mobile. Each uses a matching 4:3 portrait area. The committee page includes their biographies; the Home page uses shorter summaries.
+All four profiles appear in one row on wide desktop screens (four columns), two columns on smaller screens, and one column on mobile. Each uses a matching 4:3 portrait area. The committee page includes the supplied biographies for Sevan, Terrence and Maggi; Shushanik’s biography remains pending until approved details are provided. The Home page uses shorter summaries for available biographies.
 
 ## Deploy to GitHub Pages
 

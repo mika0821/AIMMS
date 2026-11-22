@@ -969,4 +969,4 @@ h1, h2, h3 { color: var(--heading); }
 }
 /* Portrait cropping consistent with the original 4:3 cards. */
 .member-photo img[src$="sevan-bedrossian.jpg"] { object-position: center 13%; }
-.member-photo img[src$="anna-saghabalyan.jpg"] { object-position: center 38%; }
+.member-photo img[src$="shushanik-kerobyan.jpg"] { object-position: center 38%; }
